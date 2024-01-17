@@ -145,7 +145,9 @@
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">{{feature.name}}</a></h4>
               <p class="description">{{feature.details}}</p>
-          
+              {% if feature.name == 'Quick' %}
+              <p>This feature says our site is quick</p>
+              {% endif %}
             </div>
           </div>
           {% endfor %}
