@@ -138,37 +138,18 @@
         </div>
 
         <div class="row">
+
+          {% for feature in features %}
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">{{feature1.name}}</a></h4>
-              <p class="description">{{feature1.details}}</p>
+              <h4 class="title"><a href="">{{feature.name}}</a></h4>
+              <p class="description">{{feature.details}}</p>
             </div>
           </div>
+          {% endfor %}
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">{{feature2.name}}</a></h4>
-              <p class="description">{{feature2.details}}</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">{{feature3.name}}</a></h4>
-              <p class="description">{{feature3.details}}</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">{{feature4.name}}</a></h4>
-              <p class="description">{{feature4.details}}</p>
-            </div>
-          </div>
+        
 
         </div>
 
